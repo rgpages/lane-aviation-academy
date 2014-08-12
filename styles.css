@@ -360,7 +360,7 @@ footer{
 	width: 100% !important;
 	height: 100% !important;
 	max-width: none;
-	/*position: absolute;*/ /*this didn't strech all the way across*/
+	position: absolute; /*this didn't strech all the way across*/
 	top: 0;
 	left: 0;
 }
