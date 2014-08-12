@@ -1,9 +1,7 @@
 <!doctype html>
 <html>
-<!-- Created by Rob Denton/The Register-Guard on July 18,2014 -->
+<!-- Created by Rob Denton/The Register-Guard on August 12,2014 -->
 <head>
-	
-	<!-- Created by Rob Denton/The Register-Guard on July 18,2014 -->
 	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=yes">
@@ -130,11 +128,11 @@
 	</div><!-- /.bat_wrap -->
 	
 	<div id="owl-demo" class="bat_full owl-carousel owl-theme">
-		<div class="item"><img src="media/images/airplanes18.jpg" alt="Airplanes"><p>The Lane Aviation Academy recently acquired two new light sport aircrafts, which they bought for $115,00 each. The lighter-weight planes have a lighter shell, which provides easier handling for those in the program. Director Steve Boulton says the increased maneuverability gives students an easier experience while learning how to fly.</p></div>
-		<div class="item"><img src="media/images/airplanes06.jpg" alt="Airplanes"><p>The two RV-12's are equipped with a full autopilot, which allows Lane Aviation Director Steve Boulton to have one-on-one instruction time with students while in the air. Their current fleet has partial auto-pilot.</p></div>
-		<div class="item"><img src="media/images/airplanes11.jpg" alt="Airplanes"><p>The Lane Aviation Academy recently acquired two new light sport aircrafts, which they bought for $115,00 each. The lighter-weight planes have a lighter shell, which provides easier handling for those in the program. Director Steve Boulton says the increased maneuverability gives students an easier experience while learning how to fly.</p></div>
-		<div class="item"><img src="media/images/airplanes12.jpg" alt="Airplanes"><p>One of the main differences between these new planes, and their current fleet, is the single-wheeled axles, which allow the plane to be turned 360 degrees from a dead stop. This increased maneuverability provides studdents an easier experience when they're first learing to fly, according to director Steve Boulton. </p></div>
-		<div class="item"><img src="media/images/airplanes14.jpg" alt="Airplanes"><p>The Lane Aviation Academy recently acquired two new light sport aircrafts, which they bought for $115,00 each. The lighter-weight planes have a lighter shell, which provides easier handling for those in the program. Director Steve Boulton says the increased maneuverability gives students an easier experience while learning how to fly.</p></div>
+		<div class="item"><img src="media/images/airplanes18.jpg" alt="Airplanes"><p>Boulton had the planes painted with Lane Aviation Academy's logo to help advertise his program during training flights.</p></div>
+		<div class="item"><img src="media/images/airplanes06.jpg" alt="Airplanes"><p>The RV-12s are built with a smoother throttle and choke than other light sport air crafts. In addition, the RV-12's have a full-autopilot, which allows Boulton to have more personalized instruction with the students while in the air.</p></div>
+		<div class="item"><img src="media/images/airplanes11.jpg" alt="Airplanes"><p>The planes come equipped from the factory with removable wings, a function that allows the planes to be stored in smaller hangars.</p></div>
+		<div class="item"><img src="media/images/airplanes12.jpg" alt="Airplanes"><p>The RV-12s come equipped with single-wheel axles, which allow the plane to be turned 360 degrees at a dead stop.</p></div>
+		<div class="item"><img src="media/images/airplanes14.jpg" alt="Airplanes"><p>The planes have a shorter router, which allows for easier handling during flights.</p></div>
 	</div>
 	
 	<div class="bat_wrap">
@@ -170,7 +168,19 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<!-- zeppelin -->
 	<script src="http://static.registerguard.com/v5/zeppelin/prod/0.1.0/20140716/1/scripts/zeppelin.min.js"></script>
-		<!-- OWL -->
+	
+	<!-- don't display video on ios, gets rid of play button -->
+	<script>
+		var device = navigator.userAgent.toLowerCase();
+		var ios = device.match(/(iphone|ipod|ipad)/);
+		var video = $('video');
+		var img = video.children("img");
+		if (ios) {
+			$(video).replaceWith(img);
+		}
+	</script>
+	
+	<!-- OWL -->
 	<script src="owl-carousel/owl.carousel.js"></script>
 	<script>
 		$(document).ready(function() {
