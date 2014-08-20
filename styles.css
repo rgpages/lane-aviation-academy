@@ -397,3 +397,19 @@ audio, video {
 	letter-spacing: .05em;
 	color: #999;
 }
+
+/* addthis */
+.addthis_sharing_toolbox{
+	width: 100%;
+	margin-top: 24px;
+	text-align: center;
+}
+
+@media (min-width: 980px) {
+	.addthis_sharing_toolbox{
+		width: 20%;
+		float: right;
+		text-align: right;
+	}
+}
+/* end of addthis */
